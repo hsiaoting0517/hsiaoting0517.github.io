@@ -34,3 +34,7 @@
 .mail-color:hover {
   background-color: #b5c4b1;
 }
+
+.card-title {
+  text-transform: none;
+}
