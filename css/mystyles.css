@@ -38,3 +38,12 @@
 .card-title {
   text-transform: none;
 }
+
+/* 修改大頭貼尺寸 */
+@media (min-width: 992px) {
+    #sideNav .navbar-brand .img-profile {
+        max-width: 13rem;  /* 原本是 10rem，數字改大圖片就會變大 */
+        max-height: 13rem; /* 請保持長寬數字一致，才會是正圓形 */
+        border-width: 0.5rem; /* 這是外圈白框的粗細，可依喜好調整 */
+    }
+}
