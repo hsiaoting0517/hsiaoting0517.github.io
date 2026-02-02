@@ -34,7 +34,16 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Protfolio">Protfolio</a></li>
+                    
+                    <li class="nav-item dropdown header-dropdown">
+                        <a class="nav-link dropdown-toggle js-scroll-trigger" href="#Protfolio" id="navbarDropdown" role="button" aria-expanded="false">
+                            Portfolio
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item js-scroll-trigger" href="#school-others">School & Others</a></li>
+                            <li><a class="dropdown-item js-scroll-trigger" href="#interns">Interns</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -117,7 +126,7 @@
                                 <a href="https://www.shu.edu.tw/"><i class="fa-solid fa-school-flag"></i> </a>
                                 
                             </h3>
-                            <div class="subheading mb-3">SHU ICS</div>
+                            <div class="subheading mb-3">Department of Information and Communications, Shih Hsin University</div>
                             <p>在此學習資訊設計、知識加值、網路傳播等三大核心知識</p>
 
         
@@ -129,7 +138,7 @@
                             <h3 class="mb-0">國立屏東女子高級中學
                                 <a href="https://www.ptgsh.ptc.edu.tw/home"><i class="fa-solid fa-school-flag"></i> </a>
                             </h3>
-                            <div class="subheading mb-3">National Ping-Tung Girl`s Senior High School </div>
+                            <div class="subheading mb-3">National Ping-Tung Girl’s Senior High School </div>
                             <p>屏東女中福利社的茶葉蛋超好吃</p>
                             
                             
@@ -172,13 +181,14 @@
             <hr class="m-0" />
             <!-- Protfolio-->
            <section class="resume-section" id="Protfolio">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Portfolio</h2>
+                 <div class="resume-section-content">
+                 <h2 class="mb-5">Portfolio</h2>
 
-                    <h3 class="mb-3">平面設計</h3>
+                    <h3 id="school-others" class="mb-4 text-secondary" style="font-weight: 700; padding-top: 20px;">School & Others</h3>
+
+                    <h4 class="mb-3">平面設計</h4>
                     <div id="carouselDesign" class="carousel carousel-dark slide mb-5" data-bs-ride="false" data-bs-interval="false">
                         <div class="carousel-inner">
-                            
                             <div class="carousel-item active">
                                 <div class="container px-4 px-lg-5">
                                     <div class="row gx-4 gx-lg-5 justify-content-center">
@@ -191,7 +201,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        
                                         <div class="col-md-6 mb-4">
                                             <div class="card h-100 mx-auto" style="max-width:400px">
                                                 <img class="card-img-top" src="assets/img/pswork02.jpg" alt="Woozi海報" style="width:100%">
@@ -231,7 +240,6 @@
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselDesign" data-bs-slide="prev" style="left: -5%;">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -243,11 +251,9 @@
                         </button>
                     </div>
 
-
-                    <h3 class="mb-3">名片設計</h3>
+                    <h4 class="mb-3">名片設計</h4>
                     <div id="carouselBusiness" class="carousel carousel-dark slide mb-5" data-bs-ride="false" data-bs-interval="false">
                         <div class="carousel-inner">
-                            
                             <div class="carousel-item active">
                                 <div class="container px-4 px-lg-5">
                                     <div class="row gx-4 gx-lg-5 justify-content-center">
@@ -297,7 +303,6 @@
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselBusiness" data-bs-slide="prev" style="left: -5%;">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -309,8 +314,7 @@
                         </button>
                     </div>
 
-
-                    <h3 class="mb-3">繪畫作品</h3>
+                    <h4 class="mb-3">繪畫作品</h4>
                     <div id="carouselArt" class="carousel carousel-dark slide" data-bs-ride="false" data-bs-interval="false">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -396,7 +400,7 @@
                         </button>
                     </div>
 
-                    <h3 class="mb-3 mt-5">其他作品</h3>
+                    <h4 class="mb-3 mt-5">其他作品</h4>
                     <div class="row justify-content-center">
                         <div class="col-md-10">
                             <div class="table-responsive">
@@ -471,8 +475,108 @@
                             </div>
                         </div>
                     </div>
+                    
+                    <hr class="mt-5 mb-5" style="border-top: 3px solid #b5c4b1; opacity: 0.5;">
 
-                    <h3 class="mb-3 mt-5">實習作品-存在音樂</h3>
+                    <h3 id="interns" class="mb-4 text-secondary" style="font-weight: 700; padding-top: 20px;">Interns</h3>
+
+                    <h4 class="mb-3">電商活動</h4>
+                        <div id="carouselEcommerce" class="carousel carousel-dark slide mb-5" data-bs-ride="false" data-bs-interval="false">
+                            <div class="carousel-inner">
+                                
+                                <div class="carousel-item active">
+                                    <div class="container px-4 px-lg-5">
+                                        <div class="row gx-4 gx-lg-5 justify-content-center">
+                                            <div class="col-md-6 mb-4">
+                                                <div class="card h-100 mx-auto" style="max-width:400px">
+                                                    <img class="card-img-top" src="assets/img/TE6.png" alt="鵲橋上的弦音" style="width:100%">
+                                                    <div class="card-body text-center">
+                                                        <h5 class="card-title mb-0">鵲橋上的弦音</h5>
+                                                        <div class="text-black-50 mb-2">兔比王國八月電商活動</div>
+                                                        <a href="https://www.instagram.com/p/DN0q4BB5kwH/" target="_blank" class="btn btn-sm btn-outline-primary">View Post</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mb-4">
+                                                <div class="card h-100 mx-auto" style="max-width:400px">
+                                                    <img class="card-img-top" src="assets/img/TE5.png" alt="開學萬事通" style="width:100%">
+                                                    <div class="card-body text-center">
+                                                        <h5 class="card-title mb-0">開學萬事通</h5>
+                                                        <div class="text-black-50 mb-2">兔比王國九月電商活動</div>
+                                                        <a href="https://www.instagram.com/p/DOTPHR-kWpH/" target="_blank" class="btn btn-sm btn-outline-primary">View Post</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="container px-4 px-lg-5">
+                                        <div class="row gx-4 gx-lg-5 justify-content-center">
+                                            <div class="col-md-6 mb-4">
+                                                <div class="card h-100 mx-auto" style="max-width:400px">
+                                                    <img class="card-img-top" src="assets/img/TE4.png" alt="滿月怪獸討伐戰" style="width:100%">
+                                                    <div class="card-body text-center">
+                                                        <h5 class="card-title mb-0">滿月怪獸討伐戰</h5>
+                                                        <div class="text-black-50 mb-2">兔比王國十月電商活動</div>
+                                                        <a href="https://www.instagram.com/p/DPYrlc7k-1V/" target="_blank" class="btn btn-sm btn-outline-primary">View Post</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mb-4">
+                                                <div class="card h-100 mx-auto" style="max-width:400px">
+                                                    <img class="card-img-top" src="assets/img/TE3.png" alt="你今天要犒賞自己什麼" style="width:100%">
+                                                    <div class="card-body text-center">
+                                                        <h5 class="card-title mb-0">你今天要犒賞自己什麼？</h5>
+                                                        <div class="text-black-50 mb-2">兔比王國十一月電商活動</div>
+                                                        <a href="https://www.instagram.com/p/DQ34A4Lk32e/" target="_blank" class="btn btn-sm btn-outline-primary">View Post</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="container px-4 px-lg-5">
+                                        <div class="row gx-4 gx-lg-5 justify-content-center">
+                                            <div class="col-md-6 mb-4">
+                                                <div class="card h-100 mx-auto" style="max-width:400px">
+                                                    <img class="card-img-top" src="assets/img/TE2.png" alt="Sophia II 全單旅行吉他" style="width:100%">
+                                                    <div class="card-body text-center">
+                                                        <h5 class="card-title mb-0">選品【Sophia II】</h5>
+                                                        <div class="text-black-50 mb-2">九月份選品代表</div>
+                                                        <a href="https://www.instagram.com/p/DOa8xSMkwsr/" target="_blank" class="btn btn-sm btn-outline-primary">View Post</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mb-4">
+                                                <div class="card h-100 mx-auto" style="max-width:400px">
+                                                    <img class="card-img-top" src="assets/img/TE1.png" alt="第6個作品名稱" style="width:100%">
+                                                    <div class="card-body text-center">
+                                                        <h5 class="card-title mb-0">第6個作品標題</h5>
+                                                        <div class="text-black-50 mb-2">作品說明</div>
+                                                        <a href="#" target="_blank" class="btn btn-sm btn-outline-primary">View Post</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselEcommerce" data-bs-slide="prev" style="left: -5%;">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselEcommerce" data-bs-slide="next" style="right: -5%;">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
                     <div class="row justify-content-center">
                         <div class="col-md-10">
                             <div class="table-responsive">
@@ -531,7 +635,7 @@
                                                 </a>
                                             </td>
                                         </tr>
-                                         <tr>
+                                        <tr>
                                             <th scope="row">選品【Sophia II 全單旅行吉他】</th>
                                             <td>九月份選品代表，共八篇</td>
                                             <td>社群貼文</td>
@@ -616,10 +720,16 @@
                             </div>
                         </div>
                     </div>
-                    
                     <hr class="m-0" />
                 </div>
             </section>
+
+            <footer class="py-5 text-center text-muted">
+                <div class="container">
+                    <small>Copyright &copy; 2026 卓筱婷 All rights reserved</small>
+                </div>
+            </footer>
+
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->

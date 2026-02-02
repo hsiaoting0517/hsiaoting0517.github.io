@@ -39,11 +39,67 @@
   text-transform: none;
 }
 
-/* 修改大頭貼尺寸 */
+/* --- Navbar 下拉選單美化區塊 (更新版) --- */
+
+/* --- 修正 Navbar 下拉選單：移除所有狀態的橘色背景 --- */
+
+/* 針對所有狀態 (滑鼠懸停、點擊中、被 ScrollSpy 判定為當前頁面) */
+#sideNav .dropdown-item:hover,
+#sideNav .dropdown-item:focus,
+#sideNav .dropdown-item:active,
+#sideNav .dropdown-item.active {
+    background-color: transparent !important; /* 強制背景透明 (移除橘色) */
+    color: #fff !important; /* 文字變亮白 */
+    opacity: 1 !important; /* 確保文字不透明 */
+}
+
+/* 確保預設狀態下 (沒選到時) 稍微暗一點，這樣移過去變亮才有感覺 */
+#sideNav .dropdown-item {
+    color: rgba(255, 255, 255, 0.55) !important;
+    transition: color 0.3s ease; /* 讓變色有漸層動畫 */
+}
+
+/* 1. 互動設定：滑鼠游標移到 Portfolio 上時，自動顯示選單 */
 @media (min-width: 992px) {
-    #sideNav .navbar-brand .img-profile {
-        max-width: 13rem;  /* 原本是 10rem，數字改大圖片就會變大 */
-        max-height: 13rem; /* 請保持長寬數字一致，才會是正圓形 */
-        border-width: 0.5rem; /* 這是外圈白框的粗細，可依喜好調整 */
+    .header-dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
     }
+}
+
+/* 2. 外觀設定：移除邊框、背景，並確保寬度足夠讓文字置右 */
+#sideNav .dropdown-menu {
+    background-color: transparent !important; /* 背景透明 */
+    border: none !important; /* 去除邊框 */
+    box-shadow: none !important; /* 去除陰影 */
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-left: 0; 
+    width: 100%; /* 重點：讓選單寬度佔滿，這樣置右才會生效 */
+    min-width: unset; /* 移除 Bootstrap 預設最小寬度限制 */
+}
+
+/* 3. 子選項文字設定：字體變小、文字置右 */
+#sideNav .dropdown-item {
+    color: rgba(255, 255, 255, 0.55) !important; /* 淺灰 */
+    font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 0.05rem;
+    transition: color 0.3s ease;
+    
+    /* --- 這次修改的重點 --- */
+    font-size: 0.85rem;       /* 字體變小 (Portfolio 本身約 1rem) */
+    text-align: right;        /* 文字靠右對齊 */
+    padding-right: 3rem;      /* 右側留一點距離，讓視覺比較平衡 (可自行修改數字) */
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+/* 4. 子選項滑鼠互動設定：移過去變亮白 */
+#sideNav .dropdown-item:hover, 
+#sideNav .dropdown-item:focus {
+    color: #fff !important; /* 變亮白 */
+    background-color: transparent !important;
+    /* 移除之前的位移動畫，避免置右時看起來奇怪 */
 }
