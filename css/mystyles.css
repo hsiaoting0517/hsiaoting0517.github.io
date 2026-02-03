@@ -103,3 +103,13 @@
     background-color: transparent !important;
     /* 移除之前的位移動畫，避免置右時看起來奇怪 */
 }
+
+/* 讓卡片裡的圖片連結在滑鼠移過去時，有變淡的效果 */
+.card a img {
+    transition: opacity 0.3s ease;
+}
+
+.card a:hover img {
+    opacity: 0.8; /* 透明度變為 80% */
+    cursor: pointer; /* 確保滑鼠變成手指形狀 */
+}
